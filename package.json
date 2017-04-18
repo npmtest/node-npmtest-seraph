@@ -1,1 +1,40 @@
-{     "devDependencies": {         "seraph": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-seraph",     "homepage": "https://github.com/npmtest/node-npmtest-seraph",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-seraph.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [seraph (v0.15.2)](https://github.com/brikteknologier/seraph#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-seraph.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-seraph) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-seraph.svg)](https://travis-ci.org/npmtest/node-npmtest-seraph)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "seraph": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-seraph",
+    "keywords": [
+        "coverage",
+        "test",
+        "seraph"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_seraph.js",
+    "name": "npmtest-seraph",
+    "nameAlias": "npmtest_seraph",
+    "nameOriginal": "npmtest-seraph",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-seraph.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
