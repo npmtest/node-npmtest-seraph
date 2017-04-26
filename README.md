@@ -1,6 +1,6 @@
 # npmtest-seraph
 
-#### test coverage for  [seraph (v0.15.2)](https://github.com/brikteknologier/seraph#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-seraph.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-seraph) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-seraph.svg)](https://travis-ci.org/npmtest/node-npmtest-seraph)
+#### basic test coverage for  [seraph (v0.15.2)](https://github.com/brikteknologier/seraph#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-seraph.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-seraph) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-seraph.svg)](https://travis-ci.org/npmtest/node-npmtest-seraph)
 
 #### A thin and familiar layer between node and neo4j's REST api.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-seraph/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-seraph/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-seraph/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-seraph/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-seraph/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-seraph/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-seraph/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-seraph/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-seraph/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-seraph/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-seraph/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-seraph/build/coverage.html/index.html)
 
@@ -95,7 +95,8 @@
         "quick-test": "USE_DIRTY_DATABASE=true NO_STOP=true ./node_modules/mocha/bin/mocha -R spec -t 3000 -s 2000",
         "test": "./node_modules/mocha/bin/mocha -R spec -t 10000 -s 2000"
     },
-    "version": "0.15.2"
+    "version": "0.15.2",
+    "bin": {}
 }
 ```
 
